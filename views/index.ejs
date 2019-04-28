@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejs file</title>
+</head>
+
+<body >
+        <% include partials/header %>
+        
+        <h1>Hello it's Localhost:4000 </h1>
+
+        <h2 >&</h2>
+        <h1> i'm <%=name %></h1>
+        <h1>
+            Hey <%=name%>, here is the list of your goals:
+        </h1>
+        <div>
+            <ul class="goals">
+               <% goals.map(function(goal){%>
+
+                    <li class="goal-list"><%=goal.title %></li>
+                    <form action="/form/<%=goal._id%>?_method=DELETE" method="POST" >
+                        <button type="submit" onclick="return confirmDelete()">Delete</button>
+                    </form>
+                <% }) %>
+            </ul>
+        </div>
+
+        <script>
+        function confirmDelete(){
+            return confirm("Are you Sure?");
+        }
+        </script>
+</body>
+<% include partials/footer %>
+</html>
