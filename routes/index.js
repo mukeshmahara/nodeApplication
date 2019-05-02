@@ -13,6 +13,9 @@ Router.post("/form",indexControllers.formSubmit);
 
 Router.get("/about",indexControllers.about);
 
+Router.get("/signup",indexControllers.signup);
+
+Router.get("/login",indexControllers.login);
 // Router.get("/formState",indexControllers.formState);
 
 // Router.post("/formSubmit",indexControllers.formSubmit);

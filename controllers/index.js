@@ -9,8 +9,6 @@ exports.dataShow=(req,res)=>{
     
 }
 
-
-
 exports.form=(req,res)=>{
     res.render("form.ejs");
 }
@@ -43,5 +41,17 @@ exports.deleteGoal=async(req,res)=>{
 }
 
 exports.about=(req,res)=>{
+    
     res.send("Its mukesh mahara");
+}
+
+exports.signup=(req,res)=>{
+
+    // res.send("This is the user signup page Comming soon!!");
+    res.render("signup.ejs");
+    // res.redirect('/signup');
+}
+
+exports.login=(req,res)=>{
+    res.render("login.ejs");
 }
