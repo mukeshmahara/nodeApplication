@@ -35,15 +35,25 @@ ul {
     color: white;
     text-align: center;
   }
-
+   .btn{
+     margin: right;
+     width: 10vw;
+     height: 2vw;
+     color: green;
+     border-radius: 5px;
+   }
   ul.goals{
-      background-color: white;
-      border: solid, blanchedalmond 10px;
+      background-color:mediumaquamarine;
+      border: solid, blanchedalmond, 10px;
   }
   
   li.goal-list{
-      display:block;
-      float:none;
+    border: solid, burlywood,2px;
+    font-size: 20px;
+    display:block;
+    text-align: center;
+    float: none;
+   
   }
   .login{
     height: 20vw;
@@ -77,6 +87,7 @@ ul {
 
   }
   form{
+    font-size: 20px;
     height: 60%;
     width: 50%;
     margin: 10%,0%,10%,50%;
