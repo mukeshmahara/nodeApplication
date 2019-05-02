@@ -10,6 +10,9 @@ Router.delete("/form/:id",indexControllers.deleteGoal);
 
 Router.post("/form",indexControllers.formSubmit);
 
+
+Router.get("/about",indexControllers.about);
+
 // Router.get("/formState",indexControllers.formState);
 
 // Router.post("/formSubmit",indexControllers.formSubmit);

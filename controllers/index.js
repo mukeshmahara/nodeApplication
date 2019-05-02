@@ -41,3 +41,7 @@ exports.deleteGoal=async(req,res)=>{
     await Goal.remove({_id:req.params.id});
     res.redirect('/');
 }
+
+exports.about=(req,res)=>{
+    res.send("Its mukesh mahara");
+}
