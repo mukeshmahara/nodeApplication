@@ -36,9 +36,10 @@ ul {
     text-align: center;
   }
    .btn{
+     font-size: 2vw;
      margin: right;
      width: 10vw;
-     height: 2vw;
+     height: 3vw;
      color: green;
      border-radius: 5px;
    }
