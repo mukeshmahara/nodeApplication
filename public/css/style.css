@@ -31,14 +31,17 @@ ul {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: black;
+    background-color: orchid;
     color: white;
     text-align: center;
   }
    .btn{
      font-size: 2vw;
      margin: right;
-     width: 10vw;
+     width: 10
+     
+     
+     vw;
      height: 3vw;
      color: green;
      border-radius: 5px;
