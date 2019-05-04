@@ -20,7 +20,7 @@
         <div >
             <ul class="goals">
                <% goals.map(function(goal){%>
-
+                
                     <li class="goal-list"><%=goal.title %></li>
                     <form action="/form/<%=goal._id%>?_method=DELETE" method="POST" >
                         <button type="submit" onclick="return confirmDelete()" class="btn">Delete</button>
