@@ -1,6 +1,5 @@
 const mangooose=require("mongoose");
 
-
 const GoalSchema =new mangooose.Schema({
 
 title:String,
