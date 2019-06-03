@@ -55,3 +55,7 @@ exports.signup=(req,res)=>{
 exports.login=(req,res)=>{
     res.render("login.ejs");
 }
+
+exports.webspeechdemo=(req,res)=>{
+    res.render("webspeechdemo.ejs");
+}

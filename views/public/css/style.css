@@ -1,0 +1,100 @@
+body{
+  text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: orchid;
+    color: white;
+    text-align: center;
+  }
+   .btn{
+     font-size: 2vw;
+     margin: right;
+     width: 10
+     
+     
+     vw;
+     height: 3vw;
+     color: green;
+     border-radius: 5px;
+   }
+  ul.goals{
+      background-color:mediumaquamarine;
+      border: solid, blanchedalmond, 10px;
+  }
+  
+  li.goal-list{
+    border: solid, burlywood,2px;
+    font-size: 20px;
+    display:block;
+    text-align: center;
+    float: none;
+   
+  }
+  .login{
+    height: 20vw;
+    width: 40vw;
+    margin-top: 10%;
+    margin-left: 30%;;
+
+    border: solid rgb(187, 185, 185) 10px;
+    border-radius: 10px;
+    background-color: rgb(143, 134, 134);
+    padding: 10%,10%,20%,10%;
+    font-size: 25px;
+  }
+  .signup{
+    font-size: 20px;
+    text-align: center;
+    height: 50%;
+    width: 40%;
+    margin: 10%,20%,10%,20%;
+
+    border: solid gray 5px;
+    border-radius: 10px;
+    background-color: darkgray;
+    padding: 0%,10%,0%,10%;
+  }
+  input{
+    text-align: center;
+    border: solid,gray,10px;
+    border-radius: 10px;
+    padding: 0%,10%,0%,10%;
+
+  }
+  form{
+    font-size: 20px;
+    height: 60%;
+    width: 50%;
+    margin: 10%,0%,10%,50%;
+    padding:  0%,10%,0%,10%;
+    border: solid,black,5px;
+  }
