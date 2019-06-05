@@ -7,37 +7,53 @@
     
     <!-- <link rel="stylesheet" href="/css/style.css" type="text/css" >  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
     <title>Document</title>
 </head>
 <body>
     
-    
-        <nav>
-            <ul class="nav nav-tabs" > 
-                <li   class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo0" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0" >                        
+                <li   class="nav-item active">
+                    <a href="/form" class="nav-link">my_app <span class="sr-only">(current)</span></a>
                 </li>
-                <li   class="nav-item">
-                    <a href="/form" class="nav-link">my_app</a>
-                </li>
-                <li  class="nav-item"> 
-                    <a class="nav-link" href="https://www.youtube.com">Youtube</a>
-                </li> 
-                <li  class="nav-item">
+                
+                <li  class="nav-item active">
+                        
                     <a class="nav-link" href="https://www.facebook.com">Facebook</a>
                 </li>
-                <li  class="nav-item">
+                <li  class="nav-item active">
                     <a class="nav-link" href="/about">Aurthor</a>
                 </li>
-                <li  class="nav-item"> 
+        
+                <li  class="nav-item active"> 
                     <a class="nav-link" href="/signup">Sign up</a>
                 </li>
-                <li  class="nav-item"> 
+            
+                <li  class="nav-item active"> 
                     <a class="nav-link" href="/login">login</a>
                 </li>
-                <li class="nav-item">
+                
+                <li class="nav-item active">
                     <a class="nav-link" href="/webspeechdemo">webspeechdemo</a>
                 </li>
+                <li class="nav-item active">
+                        <a class="nav-link" href="/portfolio">My portfolio</a>
+                    </li>
             </ul>
-        </nav>
- 
+                
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+            
+    </nav>
+    
+    

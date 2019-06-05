@@ -59,3 +59,6 @@ exports.login=(req,res)=>{
 exports.webspeechdemo=(req,res)=>{
     res.render("webspeechdemo.ejs");
 }
+exports.portfolio=(req,res)=>{
+    res.render("portfolio.ejs");
+}

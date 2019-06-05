@@ -21,5 +21,6 @@ Router.get("/login",indexControllers.login);
 // Router.post("/formSubmit",indexControllers.formSubmit);
 
 Router.get("/webspeechdemo",indexControllers.webspeechdemo);
+Router.get("/portfolio",indexControllers.portfolio);
 
 module.exports=Router;
