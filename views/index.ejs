@@ -1,61 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <title>Goal Setter</title>
-    <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-</head>
 
-<body >
         <% include partials/header %>
 
         <h1> i'm <%=name %></h1>
 
-       
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th  scope="col">S.N</th>
-                    <th scope="col">
-                        Goal List
-                    </th>         
-                    <th scope="col">Delete option</th>   
-                </tr>
-            </thead>
-            <tbody>
-                <tr> 
-                    <th scope="row">1</th> 
-                    
-                    <td><% goals.map(function(goal){ %>
-                        <%=goal.title %> 
-                        <% }) %>    
-                    </td>  
+       <div> 
+            <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Goal List</th>         
+                            <th scope="col">Delete option</th>   
+                        </tr>
+                    </thead>
+                    <tbody >
+                        <tr>
+                            <td>
+                                <% goals.map(function(goal){ %>
+                                    <%=goal.title %>
+                                <% }) %>  
+                                <br>
+                                                    
+                            </td>
+                             
+                            <td>
+                                <% goals.map(function(goal){%>
+                                    <form action="/form/<%=goal._id%>?_method=DELETE" method="POST" >
+                                        <button type="submit" onclick="return confirmDelete()">Delete</button>
+                                        </form>
+                                    <% }) %> <br>
+                            </td>
+                        </tr>
+  
+                    </tbody>
+                </table>
+                
+       </div>
 
-                     <td><% goals.map(function(goal){%>
-                        <form action="/form/<%=goal._id%>?_method=DELETE" method="POST" >
-                            <button type="submit" onclick="return confirmDelete()" class="btn btn-danger">Delete</button><br>
-                        </form>
-                        <% }) %> 
-                    </td>
-                     
-                </tr>
-                <br>
-            </tbody>
-        </table>
-
+       <div class="container-fluid" style="height: 100%">
+           <div class="row" style="height: 100%">
+               <div class="col-4 bg-primary" >
+                   <h1>C</h1>
+                <pre>printf("Hello world");</pre>
+               </div>
+               <div class="col-4 bg-secondary">
+                <h1>C++</h1>
+                <pre>cout<<"Hello world";</pre>
+               </div>
+               <div class="col-4 bg-danger" >
+                <h1>Python</h1>
+                <pre>print("hello world");</pre>
+               </div>
+           </div>
+       </div>
+        
         <script>
         function confirmDelete(){
             return confirm("Are you Sure?");
             alert(console.log("ok"));
         }
         </script>
-        
-     
+        <style>
+            html,body {
+                height: 100%;
+            }
+        </style>
+    
 </body>
 <% include partials/footer %>
-<!-- </html> -->
+</html>

@@ -15,7 +15,7 @@ exports.form=(req,res)=>{
 exports.showIndex=async(req,res)=>{
     const goals= await Goal.find({});
     console.log(goals);
-    res.render("index.ejs",{name:"lol",goals:goals})
+    res.render("index.ejs",{name:"developer",goals:goals})
 }
 
 // exports.formState=(req,res)=>{
@@ -35,6 +35,7 @@ goal.save();
 res.redirect("/");
     
 }
+
 exports.deleteGoal=async(req,res)=>{
     await Goal.remove({_id:req.params.id});
     res.redirect('/');
@@ -56,9 +57,13 @@ exports.login=(req,res)=>{
     res.render("login.ejs");
 }
 
-exports.webspeechdemo=(req,res)=>{
-    res.render("webspeechdemo.ejs");
+exports.chatbot=(req,res)=>{
+    res.render("chatbot.ejs");
 }
 exports.portfolio=(req,res)=>{
     res.render("portfolio.ejs");
+}
+
+exports.csstest=(req,res)=>{
+    res.render("csstest.ejs");
 }

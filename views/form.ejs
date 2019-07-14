@@ -1,13 +1,12 @@
 
-    <% include partials/header %>
-    <div class="container">
-        <h1>Goal Setter App</h1>
-        <form method="POST" action="/form" class="form" >
-            <label for="Goal">Goal:</label>
+    <%include partials/header%>
+    <label for="Goal"><h1>Goal Setter App</h1></label>
+    <div>
+        <form method="POST" action="/form" >
+            <label>Goal:</label>
             <input type="text" placeholder="Set your Goals" name="title">
-            <input type="submit" name="submit" class="btn btn-primary" >
+            <button  type="submit" class="btn btn-success">submit</button> 
                 
         </form>
     </div>
-    
     <% include partials/footer %>

@@ -20,7 +20,9 @@ Router.get("/login",indexControllers.login);
 
 // Router.post("/formSubmit",indexControllers.formSubmit);
 
-Router.get("/webspeechdemo",indexControllers.webspeechdemo);
+Router.get("/chatbot",indexControllers.chatbot);
 Router.get("/portfolio",indexControllers.portfolio);
+
+Router.get("/csstest",indexControllers.csstest);
 
 module.exports=Router;

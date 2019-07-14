@@ -2,7 +2,7 @@ const express = require ("express");
 const mongoose=require("mongoose");
 const app = express();
 const methodOverride=require("method-override");
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 1234;
 
 const Db="mongodb+srv://mukesh:mukesh@cluster0-dbbes.gcp.mongodb.net/test?retryWrites=true"
 
