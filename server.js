@@ -7,7 +7,7 @@ const port = process.env.PORT || 1234;
 const Db="mongodb+srv://mukesh:mukesh@cluster0-dbbes.gcp.mongodb.net/test?retryWrites=true"
 
 mongoose.connect(Db,{ useNewUrlParser: true })
-.then(console.log("connected to the mongoose database"))
+.then(console.log("connected to the mongoose database"));
 
 app.use(express.static(__dirname+'/public'));
 app.use(methodOverride("_method"));
