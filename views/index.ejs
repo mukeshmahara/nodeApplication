@@ -19,9 +19,8 @@
                                 <% })%>  
                                 <br>
                                                     
-                            </td>
-                             
-                            <td>
+                            
+                           
                                 <% goals.map(function(goal){%>
                                     <form action="/form/<%=goal._id%>?_method=DELETE" method="POST" >
                                         <button type="submit" onclick="return confirmDelete()">Delete</button>
