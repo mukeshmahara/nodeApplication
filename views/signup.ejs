@@ -11,17 +11,16 @@
 <body>
     <form action="/login" method="POST">
         <div>
-            <input type="text" class="signup" placeholder="Enter user name"><br><br>
-            <input type="text" class="signup" placeholder="Create password"><br><br>
-            <input type="text" class="signup" placeholder="Email"><br><br>
-            <input type="text" class="signup" placeholder="Address"><br><br>
+            <input type="text" class="form-control" placeholder="Enter user name"><br><br>
+            <input type="text" class="form-control" placeholder="Create password"><br><br>
+            <input type="text" class="form-control" placeholder="Email"><br><br>
+            <input type="text" class="form-control" placeholder="Address"><br><br>
             
         </div>         
         <input type="submit" name="submit" id="" onclick="return createaccount()">
     </form>
     <Script>
         function createaccount(){
-            // return confirm("Are you sure to sumbit the details?");
             document.write("You have successfully created your account...");
         }
     </Script>
