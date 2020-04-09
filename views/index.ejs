@@ -1,4 +1,4 @@
-
+        <!-- <%include bootstrap/dist/css/bootstrap.min.css%> -->
         <% include partials/header %>
 
         <h1> i'm <%=name %></h1>
@@ -19,11 +19,11 @@
                                 <% })%>  
                                 <br>
                                                     
-                            
-                           
+                                </td>
+                            <td>
                                 <% goals.map(function(goal){%>
                                     <form action="/form/<%=goal._id%>?_method=DELETE" method="POST" >
-                                        <button type="submit" onclick="return confirmDelete()">Delete</button>
+                                        <button type="submit" onclick="return confirmDelete()" class="btn btn-primary">Delete</button>
                                         </form>
                                     <% }) %> <br>
                             </td>
