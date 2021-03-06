@@ -10,7 +10,8 @@ const Db="mongodb+srv://mukesh:mukesh@cluster0-dbbes.gcp.mongodb.net/test?retryW
 mongoose.connect(Db,{ useNewUrlParser: true })
 .then(console.log("connected to the mongoose database"));
 
-app.use(express.static(__dirname+'/public'));
+app.use(express.static(__dirname+'/assets/img'));
+// app.use(express.static(d))
 app.use(methodOverride("_method"));
 app.set('view engine','ejs');
 const route =require('./routes');
