@@ -1,0 +1,69 @@
+body{
+  text-align: center;
+  background-image: url("C:/Users/Public/Pictures/desktop.ini");
+  background-position: relative;
+  backface-visibility: visible;
+  background-image: no-repeat;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+  ul.goals{
+      background-color:mediumaquamarine;
+      border: solid, blanchedalmond, 10px;
+      margin: 2vw,2vw,2vw,2vw;
+      color: aliceblue;
+  }
+  
+  li.goal-list{
+    border: solid, burlywood,2px;
+    font-size: 36px;
+    display:block;
+    text-align: center;
+    float: none;
+    margin: 20%, 20%, 20%,20%;
+    color: aliceblue;
+   
+  }
+
+  .signup{
+    font-size: 20px;
+    text-align: center;
+    height: 50%;
+    width: 40%;
+    margin: 20%,20%,20%,20%;
+    border: solid gray 5px;
+    border-radius: 10px;
+    background-color: darkgray;
+    padding: 0%,10%,0%,10%;
+  }
+
+
+  div.form{
+    font-size: 20px;
+    height: 60%;
+    width: 50%;
+    text-align: center;
+    border: solid,black,5px;
+  }
+div.form.input{
+  border-radius: 15px;
+}
